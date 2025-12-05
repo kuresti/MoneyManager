@@ -5,7 +5,14 @@ package app;
  * package.
  ********************************/
 
-
+/********************************
+ * Interface to define what Deposit
+ * and Expense should do. The implementation
+ * of the methods included in Transaction
+ * are defined in AbstractTransaction.
+ * Which is then extended by Expense and
+ * Deposit.
+ * ********************************/
 public interface Transaction {
     double getAmount();
     String getDate();
